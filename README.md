@@ -6,7 +6,7 @@ A simple cross platform (iOS and Android) React Native calculator app. This exam
 
 ### Installation
 
-- `git clone https://github.com/ReactNativeSchool/react-native-calculator`
+- `git clone https://github.com/JamesGelok/EarthCalculator`
 - `yarn install`/`npm install`
 
 ### Running
