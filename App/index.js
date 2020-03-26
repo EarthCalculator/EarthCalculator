@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, StatusBar, SafeAreaView } from "react-native";
 
 import Row from "./components/Row";
 import Button from "./components/Button";
-import calculator, { initialState } from "./util/calculator";
+import calc, { initialState } from "./util/calculator";
 
 const styles = StyleSheet.create({
   container: {
@@ -24,7 +24,7 @@ export default class App extends React.Component {
   state = initialState;
 
   handleTap = (type, value) => {
-    this.setState(state => calculator(type, value, state));
+    this.setState(state => calc(type, value, state));
   };
 
   render() {
