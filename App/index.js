@@ -8,11 +8,11 @@ import calculator, { initialState } from "./util/calculator";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#202020",
+    backgroundColor: "#ffffff",
     justifyContent: "flex-end"
   },
   value: {
-    color: "#fff",
+    color: "#383736",
     fontSize: 40,
     textAlign: "right",
     marginRight: 20,

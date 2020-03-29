@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
     color: "#060606"
   },
   button: {
-    backgroundColor: "#333333",
+    backgroundColor: "#e3e1df",
     flex: 1,
     height: Math.floor(buttonWidth - 10),
     alignItems: "center",
     justifyContent: "center",
     borderRadius: Math.floor(buttonWidth),
     margin: 5,
-    shadowColor: '#2b2b2b',
+    shadowColor: '#ffffff',
     shadowOffset: {width: 0, height: 0},
     shadowOpacity: 1,
     shadowRadius: 4
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#a6a6a6"
   },
   buttonAccent: {
-    backgroundColor: "#f09a36"
+    backgroundColor: "#0492ff"
   }
 });
 
