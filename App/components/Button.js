@@ -6,8 +6,8 @@ const buttonWidth = screen.width / 4;
 import { NeuButton } from "neumorphism-ui";
 const styles = StyleSheet.create({
   text: {
-    color: "#fff",
-    fontSize: 25
+    color: "#000000",
+    fontSize: 30
   },
   textSecondary: {
     color: "#060606"

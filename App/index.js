@@ -13,11 +13,27 @@ const styles = StyleSheet.create({
   },
   value: {
     color: "#383736",
-    fontSize: 40,
+    fontSize: 80,
     textAlign: "right",
     marginRight: 20,
     marginBottom: 10
-  }
+  },
+    text: {
+      color: "#383736",
+      fontSize: 25,
+      textAlign: "right",
+      marginRight: 20,
+      marginBottom: 10
+    },
+    grey: {
+      color: "#383736",
+    },
+    lighterGrey: {
+      color: "#383736",
+    },
+    lightesGrey: {
+      color: "#383736",
+    }
 });
 
 export default class App extends React.Component {
@@ -26,18 +42,27 @@ export default class App extends React.Component {
   handleTap = (type, value) => {
     this.setState(state => calculator(type, value, state));
   };
+  sampleData = [
+    "There are 0 unicorns left", 
+    "72% of the world is water", 
+    "90% of all life is at risk of blah"
+  ];
 
   render() {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
         <SafeAreaView>
+          <Text style={styles.text}>{this.sampleData[2]}</Text>
+          <Text style={styles.text}>{this.sampleData[1]}</Text>
+          <Text style={styles.text}>{this.sampleData[0]}</Text>
           <Text style={styles.value}>
             {parseFloat(this.state.displayValue).toLocaleString()}
           </Text>
+
           <Row>
             <Button
-              text="C"
+              text="AC"
               theme="secondary"
               onPress={() => this.handleTap("clear")}
             />
